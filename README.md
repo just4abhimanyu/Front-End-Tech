@@ -1,6 +1,7 @@
 # Angular
-To install Angular CLI : npm install -g @angular/cli
-To check Angular CLI installed version : ng version OR ng v
+To install Angular CLI : npm install -g @angular/cli.
+To check Angular CLI installed version : ng version OR ng v.
+# To create Anguler project : ng new <Module name>
 
 Best way to get started learning Angular 2 and TypeScript is to use Angular CLI to bootstrape a new project.'
 It includes everything you need to start writing your Angular 2 Application right way
