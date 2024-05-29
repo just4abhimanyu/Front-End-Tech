@@ -1,0 +1,26 @@
+<h1 [attr.role]='heading'>Welcome to Training from Kiyan</h1>
+<p id='p1'>You are just close to upgrade yourseleves to one of the most amazing framework in demand. 
+    Be patient, consistent and pratice practice practice. 
+   <br> Practice is the only key to success.<br> 
+    You remember when you do, but you only
+     learn when you listen or watch. </p>
+
+<div id='main'>
+    <!-- string interpolation-->
+    <h1 [style.color]='randomcolor'>{{course}}</h1>
+    <!-- Squire bracket provide data/property binding-->
+    <div>
+       
+    <form>
+        <!-- <div>Name : <input type="text" [value]='course' (input)='course=$event.target.value'/></div> -->
+        <div>Name : <input type="text" [(ngModel)]="course" name="c"/></div>
+        <!-- By Using [(ngModel)]="course" name="c" we can achive two way data binding
+        inside squire bracket () is called banana bracket 
+         by using variable name="c" we are assigning data for course property binding
+        -->
+        <div>
+            <button (click)='setColor()'>Click</button>
+            <!-- Round bracket () provide Event binding -->
+        </div>
+    </form>
+</div>

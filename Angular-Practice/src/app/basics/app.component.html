@@ -1,4 +1,4 @@
-<h1>Welcome to Kiyansh World!!</h1>
+<h1 [attr.role]="heading">Welcome to Kiyansh World!!</h1>
 
 <div id="main">
     <h3>{{course}}</h3><!-- String interpolation properties binding -->
@@ -25,7 +25,9 @@
 
 
 <!---####################### class binding for colors ########################-->
-<!-- <h2>Class Binding using ngClass' directive</h2>
+<h2>Class Binding using ngClass' directive</h2>
 
 <div [ngClass]="['s1','special']"> I would be styled with [ngClass] different colors dynamically </div>
-<div [ngClass]="msgs"> I would be styled with [ngClass] different colors dynamically </div> -->
+<div [ngClass]="msgs"> I would be styled with [ngClass] different colors dynamically </div>
+
+<!---####################### Attribute Binding ########################-->
