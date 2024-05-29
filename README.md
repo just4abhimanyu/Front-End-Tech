@@ -16,5 +16,8 @@ A web development server that autometically reflect your changes in the browser 
 
   The project is also configured to use the webpack loader which handles thing like module loading , bulding and manufacturing of dependent code.
   # Serving and live loading
+
+  # To create component through CLI, we use command : ng g c <component name>
+  
   
   
