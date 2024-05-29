@@ -1,0 +1,31 @@
+<h1>Welcome to Kiyansh World!!</h1>
+
+<div id="main">
+    <h3>{{course}}</h3><!-- String interpolation properties binding -->
+    <h3 [innerText]="course"></h3><!-- String interpolation properties binding -->
+    <form>
+        <div>Name : <input type="text"/></div>
+        <div> 
+            <button disabled = {{isInvalid}}> StrClick </button> <!--Here boolean value not reflacting dynamically-->
+            <button [disabled] = 'isInvalid'> Boolean Click </button><!--whenever we deal with boolean type variable , we have to use [] bracket-->
+        </div>
+    </form>
+</div>
+<!--#################### Style Binding code for color ######################-->
+<h2>Styple binding with 'style.color' {{randomColor}} directives</h2>
+<!-- Call the random color properties to set the color of div -->
+<div [style.color] = "randomColor" [style.backgroundColor]= "'Green'" > I would be style of different color of binding dynamically !!!</div>
+
+<!--- ############### class binding for colors ###########################-->
+<h2>Class Binding using 'class' directive</h2>
+
+<div [class]="'br'"> I would be styled with [class]  </div>
+<div [class]="style1"> I would be styled with [class] </div>
+<div [class.failure]='hasError'> I would be styled with [class.style] </div> 
+
+
+<!---####################### class binding for colors ########################-->
+<!-- <h2>Class Binding using ngClass' directive</h2>
+
+<div [ngClass]="['s1','special']"> I would be styled with [ngClass] different colors dynamically </div>
+<div [ngClass]="msgs"> I would be styled with [ngClass] different colors dynamically </div> -->
